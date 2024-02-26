@@ -1,0 +1,115 @@
+body, html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    /* background-image: url(u.png); */
+    background-color: #bde0c4;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Menghapus margin untuk memastikan elemen memenuhi seluruh lebar viewport */
+    background-color: #bde0c4; /* Warna hijau lembut untuk nuansa alami */
+    height: 100vh; /* Tinggi sesuai dengan viewport */
+    min-height: 100vh; /* Membuat konten setidaknya mengisi tinggi viewport */
+    width: 100vw; /* Lebar sesuai dengan viewport */
+    justify-content: center; /* Menengahkan vertikal */
+    /* background-image: url(u.png); */
+  }
+  
+  h1 {
+    color: #4d704d; /* Darker green for the header */
+  }
+  
+  .food-item {
+    border: 1px solid #91c595;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: calc(33.33% - 20px); /* Lebar 33.33% dengan margin sebesar 20px */
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .food-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-item h3 {
+    /* background-color: #4d704d; */
+    color: #4d704d;
+    margin: 0;
+    padding: 15px; /* Menambahkan padding yang lebih besar */
+    /* border-bottom: 1px solid #386338; Menambahkan garis bawah */
+  }
+
+  .food-item p {
+    margin: 15px; /* Menambahkan margin yang lebih besar */
+    /* color: white; */
+  }
+  
+  .food-item button {
+    background-color: #4d704d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+    margin: 10px auto; /* Menengahkan tombol dan memberikan margin */
+    display: block; /* Mengubah display menjadi block agar dapat menerapkan margin auto */
+    transition: background-color 0.3s;
+    border-radius: 5cm;
+    /* padding-left: 10px; */
+  }
+  
+  
+  .food-item button:hover {
+    background-color: #446644;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Menambahkan margin ke bawah */
+  }
+
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%; /* Lebar sesuai dengan parent (.App) */
+  } 
+  
+  button {
+    background-color: #4d704d; /* Darker green for the button */
+    border-radius: 5cm;
+  }
+  
+  button:hover {
+    background-color: #446644; /* Slightly darker green on hover */
+  }
+  
+  .food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .food-item.checked {
+    background-color: #f2f2f2;
+  }
+  
+  input::placeholder {
+    color: #999; /* Warna teks placeholder */
+    font-style: italic; /* Gaya huruf placeholder */
+    font-size: 14px; /* Ukuran teks placeholder */
+}
